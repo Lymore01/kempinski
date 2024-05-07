@@ -5,6 +5,7 @@ import HeroSection from "./components/layout/HeroSection";
 import Destinations from "./components/layout//Destinations";
 import Banner from "./components/layout/Banner";
 import LoyaltyCards from "./components/layout/LoyaltyCards";
+import Stories from "./components/layout/Stories";
 
 function App() {
   const ref1 = useRef(null);
@@ -64,9 +65,9 @@ function App() {
         <Header controls={controls} isScrolled={isScrolled} />
         <HeroSection />
       </div>
-
       <Destinations />
       <Banner />
+      <Stories />
       <LoyaltyCards />
     </>
   );
