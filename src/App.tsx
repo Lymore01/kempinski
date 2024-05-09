@@ -1,5 +1,5 @@
-import { useEffect, useState, useRef } from "react";
-import { useAnimation, useInView } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useAnimation } from "framer-motion";
 import Header from "./components/layout//Header";
 import HeroSection from "./components/layout/HeroSection";
 import Destinations from "./components/layout//Destinations";
@@ -11,14 +11,9 @@ import Moments from "./components/layout/Moments";
 import Footer from "./components/layout/Footer";
 
 function App() {
-  const ref1 = useRef(null);
-  const inView1 = useInView(ref1, { once: false });
   const [isScrolled, setIsScrolled] = useState(false);
   const controls = useAnimation();
 
-  useEffect(() => {
-    console.log(inView1);
-  }, [inView1]);
 
   useEffect(() => {
     const handleScroll = () => {
