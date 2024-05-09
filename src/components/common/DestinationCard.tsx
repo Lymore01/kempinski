@@ -12,7 +12,7 @@ type Props = {
 
 const DestinationCard = ({image, logo_src,title,location,description} : Props) => {
   return (
-        <a className="h-full relative flex w-[380px] group">
+        <a className="h-[70vh] relative flex w-[380px] group">
   <motion.img
     id="image"
     src={image}
@@ -30,7 +30,7 @@ const DestinationCard = ({image, logo_src,title,location,description} : Props) =
   </motion.div>
   <motion.div
     id="div"
-    className="gap-[20px] w-full h-full bg-[rgba(0,0,0,0.7)]  justify-center items-center text-white text-[24px] font-bold absolute z-30 top-0 flex-col hidden group-hover:flex"
+    className="bg-clip-content gap-[20px] w-full h-full bg-[rgba(0,0,0,0.7)]  justify-center items-center text-white text-[24px] font-bold absolute z-30 top-0 flex-col hidden group-hover:flex"
   >
     <h4 className="font-light text-center">{title}</h4>
     <div className="w-auto p-2 flex flex-row gap-[10px] text-[14px] font-light items-center">

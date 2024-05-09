@@ -6,6 +6,9 @@ import Destinations from "./components/layout//Destinations";
 import Banner from "./components/layout/Banner";
 import LoyaltyCards from "./components/layout/LoyaltyCards";
 import Stories from "./components/layout/Stories";
+import Shop from "./components/layout/Shop";
+import Moments from "./components/layout/Moments";
+import Footer from "./components/layout/Footer";
 
 function App() {
   const ref1 = useRef(null);
@@ -69,6 +72,9 @@ function App() {
       <Banner />
       <Stories />
       <LoyaltyCards />
+      <Shop />
+      <Moments />
+      <Footer />
     </>
   );
 }

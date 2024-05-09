@@ -1,8 +1,44 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import DestinationCard from "../common/DestinationCard.tsx";
 import { destinations } from "../../utils/destinations.ts";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Destinations = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+  };
   return (
     <div className="w-full h-full p-16 flex place-content-center justify-center items-center bg-[white] flex-col gap-[20px] mb-[30px]">
       <div className="w-full h-auto p-8 pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A]">
@@ -13,7 +49,9 @@ const Destinations = () => {
           Explore the world with Kempinski. Where will you go?
         </p>
       </div>
-      <div className="items-center justify-center flex-row flex h-[70vh] overflow-x-scroll gap-[20px] p-4">
+      {/* h-auto gap-[20px] p-0 w-full z-10 */}
+      <div className="h-auto w-full  gap-[20px] p-4">
+        <Slider {...settings}>
         {destinations.map((destination) => {
           return (
             <DestinationCard
@@ -25,6 +63,7 @@ const Destinations = () => {
             />
           );
         })}
+        </Slider>
       </div>
       <div>
         <div

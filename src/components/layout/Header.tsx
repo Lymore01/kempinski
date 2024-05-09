@@ -21,7 +21,7 @@ const Header = ({ controls, isScrolled } : Props) => {
       animate={controls}
       className={`z-40 fixed top-0 w-full h-auto p-4 pr-8 pl-8 flex flex-row justify-between ${
         isScrolled ? "text-[black]" : "text-[white]"
-      } text-current font-extrabold items-center`}
+      } text-white font-extrabold items-center`}
     >
       <div className="items-center flex flex-row gap-[50px]">
             <button className="rtL:ml-6 ltr:mr-6 md:p-4" aria-label="menu" onClick={handleMenu}>
