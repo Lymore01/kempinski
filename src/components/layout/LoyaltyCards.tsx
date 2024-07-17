@@ -3,8 +3,8 @@ import LoyaltyCard from "../common/LoyaltyCard";
 const LoyaltyCards = () => {
   return (
     <>
-      <div className="w-full h-full p-16 flex place-content-center justify-center items-center bg-[whitesmoke] flex-col">
-        <div className="w-full h-auto p-8 pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A]">
+      <div className="w-full h-full py-16 md:p-16  flex place-content-center justify-center items-center  bg-[whitesmoke] flex-col">
+        <div className="w-full h-auto p-8 pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A] mt-[40px] md:mt-0">
           <h2 className="text-[32px] md:text-[34px] lg:text-[60px] font-semibold">
             Kempinski Loyalty
           </h2>
@@ -13,7 +13,7 @@ const LoyaltyCards = () => {
             and instant recognition
           </p>
         </div>
-        <div className="w-[100%] lg:flex-row flex-col md:flex-col flex sm:h-[600px] md:h-[666px] lg:h-[70vh]  bg-clip-content ">
+        <div className="w-[100%] lg:flex-row flex-col md:flex-col flex h-[800px] md:h-[666px] lg:h-[70vh] bg-clip-content ">
           <LoyaltyCard
             hover="origin-left"
             title="Instant Benefits"

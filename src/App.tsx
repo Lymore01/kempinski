@@ -42,7 +42,7 @@ function App() {
           backgroundSize: "cover",
           objectFit: "cover",
         }}
-        className="relative bg-clip-content w-full h-[105vh] items-start justify-between flex flex-col"
+        className="relative bg-clip-content w-full h-[100vh] md:h-[105vh] items-start justify-between flex flex-col"
       >
         <div className="w-full h-full absolute inset-0">
           <div className="absolute inset-0 w-full h-full object-cover bg-[rgba(0,0,0,0.3)]"></div>
@@ -51,7 +51,7 @@ function App() {
             muted
             loop
             playsInline
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
           >
             <source
               src="https://media.iceportal.com/151526/Videos/video112923012536472_720p.mp4"

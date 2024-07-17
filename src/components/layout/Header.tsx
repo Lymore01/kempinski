@@ -23,12 +23,12 @@ const Header = ({ controls, isScrolled } : Props) => {
         isScrolled ? "text-[black]" : "text-[white]"
       } text-white font-extrabold items-center`}
     >
-      <div className="items-center flex flex-row gap-[50px]">
+      <div className="items-center  flex flex-row gap-[50px] ">
             <button className="rtL:ml-6 ltr:mr-6 md:p-4" aria-label="menu" onClick={handleMenu}>
               <div className="w-10 h-1 rotate-0 transition-all bg-current mb-2"></div>
               <div className="w-10 h-1 rotate-0 transition-all bg-current "></div>
             </button>
-            <span className="sm:hidden flex-row items-center gap-[20px] lg:gap-[8px] text-[18px] font-semibold  md:hidden lg:flex">
+            <span className="hidden flex-row items-center gap-[20px] lg:gap-[8px] text-[18px] font-semibold  md:flex lg:flex">
               EN{" "}
               <span>
                 <IoIosArrowDown className="h-[24px] w-[24px] lg:w-[16px]" />
@@ -36,7 +36,7 @@ const Header = ({ controls, isScrolled } : Props) => {
             </span>
           </div>
           {/* logo */}
-          <div className="">
+          <div className="flex">
             <svg
               className="fill-current"
               width="129"
@@ -61,7 +61,7 @@ const Header = ({ controls, isScrolled } : Props) => {
               <span className="hidden sm:hidden lg:flex tracking-widest">
                 Book Now
               </span>
-              <span className="hidden sm:flex lg:hidden">Book</span>
+              <span className="flex lg:hidden">Book</span>
             </div>
           </div>
     </motion.div>

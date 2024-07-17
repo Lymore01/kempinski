@@ -40,9 +40,9 @@ const Destinations = () => {
       ]
   };
   return (
-    <div className="w-full h-full p-16 flex place-content-center justify-center items-center bg-[white] flex-col gap-[20px] mb-[30px]">
+    <div className="w-full h-full p-0 md:p-16 flex place-content-center justify-center items-center bg-[white] flex-col gap-[20px] mb-[30px]">
       <div className="w-full h-auto p-8 pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A]">
-        <h2 className="text-[32px] font-semibold lg:text-[60px] md:text-[34px]">
+        <h2 className="text-[40px] font-semibold lg:text-[60px] md:text-[34px]">
           Destinations
         </h2>
         <p className="text-[14px] font-normal lg:text-[18px] md:text-[16px]">
@@ -50,7 +50,7 @@ const Destinations = () => {
         </p>
       </div>
       {/* h-auto gap-[20px] p-0 w-full z-10 */}
-      <div className="h-auto w-full  gap-[20px] p-4">
+      <div className="h-auto w-full gap-[20px] p-4">
         <Slider {...settings}>
         {destinations.map((destination) => {
           return (

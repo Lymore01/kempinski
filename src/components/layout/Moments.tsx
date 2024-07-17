@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Moments = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 3.75,
@@ -43,8 +43,8 @@ const Moments = () => {
   };
   return (
     <>
-      <div className="w-full h-full p-16 flex place-content-center justify-center items-center bg-[white] flex-col gap-[20px] mb-[30px]">
-        <div className="w-full h-auto p-8 pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A]">
+      <div className="w-full h-full p-4 md:p-16 flex place-content-center justify-center items-center bg-[white] flex-col gap-[20px] mb-[30px]">
+        <div className="w-full h-auto p-8 md:pb-16 flex place-content-center flex-col gap-[10px] text-center text-[#02102A]">
           <h2 className="text-[32px] font-semibold lg:text-[60px] md:text-[34px]">
             @Kempinski
           </h2>

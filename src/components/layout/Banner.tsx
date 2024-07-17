@@ -50,22 +50,11 @@ const Banner = () => {
     }
   }, [currentMenu]);
 
-  /* useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % 6);
-    }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    setImage(banner[index].image);
-    setTitle(banner[index].title);
-  }, [index]); */
 
   return (
     <>
-      <div className="w-full h-full p-16 flex place-content-center justify-center items-center bg-white flex-col">
+      <div className="w-full h-full px-2 py-8 md:p-16 flex place-content-center justify-center items-center bg-white flex-col">
         <motion.div
           className={`w-[100%] flex-row flex h-[80vh] bg-clip-content relative ${
             inView1 && "md:scale-100 ease-in-out duration-800"
@@ -95,10 +84,10 @@ const Banner = () => {
               id="image1"
             ></motion.img>
           
-          <div className="w-full h-[80%] bg-[rgba(0,0,0,0.4)]  text-white text-[24px] font-bold absolute z-20 top-0 flex flex-col justify-between pt-24">
+          <div className="w-[100%] mx-auto h-[100%] md:h-[80%] bg-[rgba(0,0,0,0.4)]  text-white text-[24px] font-bold absolute z-20 bottom-0 md:top-0 flex flex-col justify-between pt-24">
             <div className="w-full h-[80%] flex items-center justify-center flex-col gap-[10px] font-light">
-              <h2 className="text-[46px]">{title}</h2>
-              <p className="text-[15px] text-center w-[500px]">
+              <h2 className="text-2xl md:text-[46px]">{title}</h2>
+              <p className="text-sm md:text-[15px] text-center w-[90%] md:w-[500px]">
                 {des}
               </p>
               <div className="mt-[30px]">
@@ -115,7 +104,7 @@ const Banner = () => {
           </div>
           </AnimatePresence>
           <div
-            className="h-[20%] w-full place-content-center flex flex-row gap-[30px] p-4 justify-center items-center list-none font-light text-[14px] capitalize absolute bottom-0 z-30 text-white bg-[rgba(0,0,0,0.4)]"
+            className="h-[20%] w-full place-content-center hidden md:flex flex-row gap-[30px] p-4 justify-center items-center list-none font-light text-[14px] capitalize absolute bottom-0 z-30 text-white bg-[rgba(0,0,0,0.4)]"
             ref={ref1}
           >
             <motion.li

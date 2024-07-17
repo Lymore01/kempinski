@@ -34,9 +34,9 @@ const Footer = () => {
   ];
   return (
     <>
-      <div className="w-full h-[60vh] bg-[#02102A] flex flex-col justify-between place-items-center gap-[20px] px-24 py-6">
-        <div className="w-full h-auto flex flex-row justify-between p-4 text-white">
-          <div className="grid grid-rows-1 grid-cols-2 text-[17px] gap-10">
+      <div className="w-full h-auto md:h-[60vh] bg-[#02102A] flex flex-col justify-between place-items-center gap-[20px] md:px-24 py-6">
+        <div className="w-full h-auto flex flex-col md:flex-row justify-between p-2 md:p-4 text-white">
+          <div className="grid grid-rows-1 grid-cols-2 text-sm md:text-[17px] gap-10">
             <div className="flex flex-col gap-[20px]">
               <h1>About us</h1>
               <ul className="list-none gap-[20px] flex flex-col">
@@ -56,8 +56,8 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-[566px] h-full bg-[] flex flex-col gap-[24px]">
-            <div className="w-full">
+          <div className=" w-[95%] md:w-[566px] h-full bg-[] flex flex-col gap-[24px] mt-[40px] md:mt-0">
+            <div className="w-full md:block hidden">
               <span className="text-[17px]">
                 Sign up for offers, news and travel inspiration
               </span>
@@ -66,7 +66,7 @@ const Footer = () => {
               <input
                 type="text"
                 placeholder="email@example.com"
-                className="text-[28px] w-full py-2  bg-[transparent] outline-none"
+                className="text-xl md:text-[28px] w-full py-2  bg-[transparent] outline-none"
               ></input>
               <div className="flex items-center">
                 <FaArrowRightLong className="fill-[#B5A191]" />
@@ -86,7 +86,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[14%] flex flex-row justify-between text-[#999FAA] text-[17px]">
+        <div className="w-full h-[14%] flex flex-col md:flex-row justify-between text-[#999FAA] text-sm md:text-[17px]">
           <div className="flex items-center p-4">
             <ul className="flex flex-row list-none items-center gap-[20px]">
               <li>Legal</li>
@@ -95,10 +95,10 @@ const Footer = () => {
               <li>Sitemap</li>
             </ul>
           </div>
-          <div className="flex items-center p-6 flex-row justify-between gap-[40px] text-white">
-              <span className="">© 2024 Kempinski Hotels</span>
-              <p>global hotel alliance</p>
-              <div>
+          <div className="flex items-center p-6 flex-col  md:flex-row justify-between gap-[20px] md:gap-[40px] text-white">
+              <span className="text-sm">© 2024 Kempinski Hotels</span>
+              <p className="text-sm">Made with ❤ by Kelly Limo.</p>
+              <div className="hidden md:block">
                 <FaArrowUpLong className="h-[30px] w-[30px] fill-[#B5A191]"/>
               </div>
           </div>
